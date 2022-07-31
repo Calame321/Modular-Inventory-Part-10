@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://inventory/inventory_player.gd" type="Script" id=1]
+[ext_resource path="res://inventory/equipment.tscn" type="PackedScene" id=2]
+[ext_resource path="res://data/resources/player_data.tres" type="Resource" id=3]
+[ext_resource path="res://ui/window.tscn" type="PackedScene" id=6]
+[ext_resource path="res://inventory/inventory.tscn" type="PackedScene" id=13]
+
+[node name="inventory_player" instance=ExtResource( 6 )]
+script = ExtResource( 1 )
+inventory_right = NodePath("inventory_container/inventory_right")
+inventory_left = NodePath("inventory_container/inventory_left")
+equipment = NodePath("inventory_container/equipment")
+player_data = ExtResource( 3 )
+
+[node name="title" parent="." index="0"]
+margin_bottom = 163.0
+
+[node name="Label" parent="title" index="1"]
+text = "Player's Inventory"
+
+[node name="inventory_container" type="VBoxContainer" parent="." index="1"]
+margin_left = 9.0
+margin_top = 9.0
+margin_right = 135.0
+margin_bottom = 163.0
+custom_constants/separation = 2
+
+[node name="equipment" parent="inventory_container" index="0" instance=ExtResource( 2 )]
+anchor_left = 0.0
+anchor_right = 0.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 126.0
+margin_bottom = 70.0
+
+[node name="inventory_left" parent="inventory_container" index="1" instance=ExtResource( 13 )]
+anchor_left = 0.0
+anchor_right = 0.0
+margin_left = 0.0
+margin_top = 72.0
+margin_right = 126.0
+margin_bottom = 112.0
+inventory_name = "Left Pocket"
+size = 5
+
+[node name="inventory_right" parent="inventory_container" index="2" instance=ExtResource( 13 )]
+anchor_left = 0.0
+anchor_right = 0.0
+margin_left = 0.0
+margin_top = 114.0
+margin_right = 126.0
+margin_bottom = 154.0
+inventory_name = "Right Pocket"
+size = 5

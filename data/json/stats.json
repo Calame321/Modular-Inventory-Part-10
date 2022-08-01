@@ -49,7 +49,10 @@
     },
     "DAMAGE": {
         "name":"Damage",
-        "display":"+%s Damage"
+        "display":"+%s Damage",
+        "affected_by":{
+            "STRENGTH": 0.5
+        }
     },
     "DEFENCE": {
         "name":"Defence",

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://data/player_data.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+global_position = Vector2( 368, 347 )
+inventories = {
+"equipment": {
+},
+"inventory_left": {
+3: {
+"id": "gold_coin",
+"quantity": 1000
+}
+},
+"inventory_right": {
+}
+}

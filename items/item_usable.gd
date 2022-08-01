@@ -73,6 +73,11 @@ func set_info( item_info ):
 	item_info.add_line( Item_Info_Line.new( "Condition:", Game_Enums.RARITY.NORMAL ) )
 	item_info.add_line( Item_Info_Line.new( condition, item.rarity ) )
 
+func get_action():
+	return {
+		name = "Use",
+		function = funcref( self, "use" )
+	}
 
 
 

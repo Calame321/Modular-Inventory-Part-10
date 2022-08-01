@@ -200,10 +200,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name=" Modular Inventory Part 9"
-config/description="Adding save & load.
-Adding the calculation of equipped stats.
-Improving the code a bit!"
+config/name=" Modular Inventory Part 10"
+config/description="Added item action menu."
 run/main_scene="res://scenes/main.tscn"
 config/icon="res://icon.png"
 

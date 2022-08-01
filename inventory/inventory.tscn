@@ -7,6 +7,9 @@
 script = ExtResource( 4 )
 slot_container = NodePath("MarginContainer/slot_container")
 
+[node name="Label" parent="title/TextureRect" index="0"]
+custom_colors/font_color = Color( 0.423529, 0.247059, 0.121569, 1 )
+
 [node name="slot_container" type="GridContainer" parent="MarginContainer" index="0"]
 margin_top = 6.0
 margin_right = 69.0

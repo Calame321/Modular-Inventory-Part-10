@@ -2,7 +2,7 @@
 
 [ext_resource path="res://inventory/inventory_player.gd" type="Script" id=1]
 [ext_resource path="res://inventory/equipment.tscn" type="PackedScene" id=2]
-[ext_resource path="res://data/resources/player_data.tres" type="Resource" id=3]
+[ext_resource path="res://data/resources/rich_player_data.tres" type="Resource" id=3]
 [ext_resource path="res://ui/window.tscn" type="PackedScene" id=6]
 [ext_resource path="res://inventory/inventory.tscn" type="PackedScene" id=13]
 

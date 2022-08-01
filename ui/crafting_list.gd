@@ -19,8 +19,14 @@ func display( recipes ):
 	show()
 	rect_size = Vector2( 140, 0 )
 
+func close():
+	.close()
+	InventoryManager.is_shop_open = false
+
 func _on_crafting_opened( list_id ):
 	display( ResourceManager.get_recipes( list_id ) )
+	if list_id == "shop":
+		InventoryManager.is_shop_open = true
 
 func _on_crafting_out_of_range():
-	hide()
+	close()

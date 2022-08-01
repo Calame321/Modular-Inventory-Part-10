@@ -4,4 +4,4 @@ Part 10 of the inventory tutorial series.
 - Add action menu on items
 - Process of adding features.
 
-Video: ??
+Video: https://youtu.be/FShrOoV26wk
